@@ -1,4 +1,4 @@
-.container{
+/* .container{
     width: 50%;
     height: 83.4vh;
     margin: auto;
@@ -77,4 +77,68 @@
     .container{
         width: 100%;;
     }
+} */
+
+
+.slider {
+  width: 100%;
+  position: relative;
+}
+
+.slider-container {
+  width: 1280px;
+  height: 600px;
+  display: flex;
+  overflow: hidden;
+  padding-left: 200px;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.slider-controls button {
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  display: flex;
+  
+}
+
+.prev-btn {
+  margin-right: 10px;
+  
+}
+
+.next-btn {
+  margin-left: 10px;
+}
+
+.slider-dots {
+  display: flex;
+  margin: 0 20px;
+}
+
+.slider-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  background-color: #555;
 }
